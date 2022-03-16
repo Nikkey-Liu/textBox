@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.entertoaction.EnterToAction" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Enter To Action</name>
+    <description>Trigger an action when the user hits the enter key in a text input</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <!-- <property key="sampleText" type="string" required="false">
+                <caption>Default value</caption>
+                <description>Sample text input</description>
+            </property> -->
+            <systemProperty key="Label"/>
+            <property key="attribute" type="attribute" >
+                <caption>attribute</caption>
+                <description>The attribute connect to the text box</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+
+                </attributeTypes>
+            </property>
+            <property key="action" type="action">
+                <caption>On Enter</caption>
+                <description>Action to be performed when enter key is pressed</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
